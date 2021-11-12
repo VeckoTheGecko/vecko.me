@@ -1,0 +1,9 @@
+{{ define "main" }}
+    This is the list template
+    {{ .Content }}
+    {{ range .Pages }}
+        <div style="border-style: solid; cursor: pointer;" onclick="location.href={{.URL}}">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+        </div>
+{{ end }} {{end}}

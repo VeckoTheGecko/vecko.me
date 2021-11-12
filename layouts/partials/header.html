@@ -1,0 +1,16 @@
+<div>{{ .Site.Title }}</div>
+<!-- Navbar -->
+<div class="navbar">
+  <!-- Nav menu -->
+  <a href='{{ "/" | absURL }}'>Home</a>
+  <a href='{{ "posts" | absURL }}'>Posts</a>
+  <a href='{{ "about" | absURL }}'>About</a>
+
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search posts..." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
