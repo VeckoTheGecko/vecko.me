@@ -1,0 +1,24 @@
+{{ define "main" }}
+    This is the post template
+    <h1>
+        {{ .Title }}
+    </h1>
+
+    <div>
+        {{ if .Params.youtube}}
+        <a href="{{.Params.youtube}}">Youtube</a>
+        {{end}}
+        {{ if .Params.github}}
+        <a href="{{.Params.github}}">GitHub</a>
+        {{end}}
+
+
+    </div>
+    <h2>
+        {{ time.Format "Jan 2, 2006 @ 3:04pm" .Date }}
+    </h2>
+
+    
+
+    {{ .Content }}
+{{end}}
