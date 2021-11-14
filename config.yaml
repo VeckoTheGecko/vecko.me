@@ -1,3 +1,7 @@
 baseURL: 'http://example.org/'
 languageCode: 'en-us'
 title: Vecko
+
+taxonomies:
+  tag: tags
+  series: series

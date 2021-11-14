@@ -6,12 +6,7 @@
   <a href='{{ "posts" | absURL }}'>Posts</a>
   <a href='{{ "animations" | absURL }}'>Animations</a>
   <a href='{{ "about" | absURL }}'>About</a>
+  {{ partial "searchposts.html" }}
 
-
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search posts..." name="search" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+  
 </div>

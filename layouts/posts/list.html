@@ -1,0 +1,29 @@
+{{ define "main" }}
+    This is the posts list template
+    {{ .Content }}
+    {{ partial "searchposts.html"}}
+    {{ range .Pages }}
+        <div style="border-style: solid; cursor: pointer;" onclick="location.href={{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+            {{ if .Params.youtube }}
+                <a href="{{ . }}"> Youtube</a>
+            {{ end }}
+            {{ if .Params.github }}
+                <a href="{{ . }}"> Github</a>
+            {{ end }}
+            <br>
+            {{ if .Params.tags }}
+                Tags:
+                {{ range .Params.tags }}
+                    <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+                {{ end }}
+                <br>
+            {{ end }}
+            {{ if .Params.series }}
+                Series:
+                <a href='{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}'>{{ .Params.series }}</a>
+            {{ end }}
+            
+            <p>{{ .Summary }}</p>
+        </div>
+{{ end }} {{end}}
