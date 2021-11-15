@@ -1,5 +1,6 @@
 baseURL: 'http://example.org/'
 languageCode: 'en-us'
+author: Nick Hodgskin
 title: Vecko
 
 taxonomies:

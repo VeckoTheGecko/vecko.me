@@ -1,3 +1,13 @@
 {{ define "main" }}
-This is the index
+<h1>Welcome to the home of Vecko!!</h1>
+<h1>Hot off the press</h1>
+<div style="border-style: solid;">
+    <!-- Finding posts by reverse date -->
+    {{ range (and (where .Site.RegularPages "Type" "posts")).ByDate.Reverse }}
+        <!-- Checking post is in the last month. -->
+        {{ if and (lt .Date.Unix now.Unix) (gt .Date.Unix (sub now.Unix 2678400))}}
+        {{ partial "postpreview.html" . }}
+        {{end}}
+    {{ end }}
+</div>
 {{end}}
