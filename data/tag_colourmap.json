@@ -1,0 +1,38 @@
+{
+    "Python": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "R": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Julia": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Data Analysis": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "YouTube": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Project": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Tutorial": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Research": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    },
+    "Oceans": {
+        "fill_colour": "fill_colour",
+        "letter_colour": "letter_colour"
+    }
+}
