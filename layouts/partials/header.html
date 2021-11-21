@@ -1,12 +1,12 @@
 <!-- Navbar -->
 <div class="navbar">
-  <div>{{ .Site.Title }}</div>
+  <a href='{{ "/" | absURL }}' class="site-title">{{ .Site.Title }}</a>
   <!-- Nav menu -->
-  <a href='{{ "/" | absURL }}'>Home</a>
-  <a href='{{ "posts" | absURL }}'>Posts</a>
-  <a href='{{ "animations" | absURL }}'>Animations</a>
-  <a href='{{ "about" | absURL }}'>About</a>
-  {{ partial "searchposts.html" }}
+  <a href='{{ "/" | absURL }}' class="nav-item">Home</a>
+  <a href='{{ "posts" | absURL }}' class="nav-item">Posts</a>
+  <a href='{{ "animations" | absURL }}' class="nav-item">Animations</a>
+  <a href='{{ "about" | absURL }}' class="nav-item">About</a>
+  {{ partial "searchposts.html" "nav-search nav-item"}}
 
   
 </div>

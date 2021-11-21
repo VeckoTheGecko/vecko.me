@@ -5,6 +5,7 @@
     --summary-backing: #292929;
 }
 
+* { margin:0; padding:0; }
 
 body {
     margin: 0;
@@ -13,6 +14,11 @@ body {
     font-family: Poppins;
     color: white;
     background-color: var(--main-bg-color);
+}
+
+.main {
+    /* Main section */
+    padding: 2em;
 }
 
 a {
@@ -31,12 +37,58 @@ a {
 
 /* Header */
 .navbar {
-    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     color: var(--main-bg-color);
     background-color: var(--vecko-green);
+
+    display: inline-flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.main {
-    padding: 2em;
+
+
+.navbar a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    align-self: center;
+}
+
+.navbar > *{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+a.nav-item {
+    transition: all .05s ease-in-out; 
+}
+
+a.nav-item:hover {
+    text-decoration: underline;
+    transform: scale(1.1); 
+}
+
+.site-title {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+
+/* STYLING SEARCH BAR */
+form.search-container input {
+    border-radius: 0;
+    border-style: solid;
+    background-color: var(--less-emphasis-grey);
+    height: 1.6em;
+}
+
+.nav-search {
+    align-self: center;
+}
+
+.posts-search {
+    /* CSS for search bar in posts page */
 }

@@ -1,6 +1,4 @@
-<div class="search-container">
-    <form action="/posts">
-      <input type="text" placeholder="Search posts..." name="search" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+<form action="/posts" class="search-container {{.}}">
+  <input type="text" placeholder="Search posts..." name="search" />
+  <button type="submit"><i class="fa fa-search">Search</i></button>
+</form>
