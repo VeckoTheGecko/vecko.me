@@ -3,7 +3,7 @@ title: "Python"
 date: 2021-11-16T00:13:30+08:00
 author: Nick Hodgskin
 draft: true
-maths: false # Bool. Katex support
+maths: true # Bool. Katex support
 
 # Organisation
 tags: [Python] # Relevant tags
@@ -15,3 +15,9 @@ github: # Optional: URL for specific GitHub repo
 youtube: # Optional: URL for specific YouTube video from the channel
 ---
 My new post!
+
+$$
+\begin{align*}
+    x &= 1+1\\\\&= 2
+\end{align*}
+$$
