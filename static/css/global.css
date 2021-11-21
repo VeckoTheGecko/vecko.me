@@ -1,0 +1,42 @@
+:root {
+    --main-bg-color: #1F1F1F;
+    --vecko-green: #26ED83;
+    --less-emphasis-grey: #989898;
+    --summary-backing: #292929;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Poppins;
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+a {
+    color: white;
+}
+
+.post-preview {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: var(--less-emphasis-grey);
+    border-radius: 1em;
+
+    padding: 1em;
+    background-color: var(--summary-backing);
+}
+
+/* Header */
+.navbar {
+    padding: 2em;
+
+    color: var(--main-bg-color);
+    background-color: var(--vecko-green);
+}
+
+.main {
+    padding: 2em;
+}
