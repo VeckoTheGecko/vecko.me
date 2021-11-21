@@ -3,6 +3,22 @@
     This is the posts list template
     {{ .Content }}
     {{ partial "searchposts.html"}}
+    <div>
+        <!-- List of tags + counts -->
+        <p>Browse by tag</p>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="/tags/{{ $name | urlize }}">{{ $name | humanize }} (x{{ $taxonomy.Count }})</a>
+        {{end}}
+    </div>
+
+    <div>
+        <!-- List of series + counts -->
+        <p>Browse by Series</p>
+        {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+            <a href="/series/{{ $name | urlize }}">{{ $name | humanize }} (x{{ $taxonomy.Count }})</a>
+        {{end}}
+    </div>
+
     {{ range .Pages }}
         {{ partial "postpreview.html" . }}
 {{ end }} {{end}}

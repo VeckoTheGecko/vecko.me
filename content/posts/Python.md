@@ -7,7 +7,7 @@ maths: false # Bool. Katex support
 
 # Organisation
 tags: [Python] # Relevant tags
-series: # Optional
+series: Kaggle # Optional
 thumbnail: # URL to post thumbnail
 
 # Linking
