@@ -40,19 +40,21 @@ a {
     padding-top: 1em;
     padding-bottom: 1em;
 
-    color: var(--main-bg-color);
-    background-color: var(--vecko-green);
+    background-color: var(--main-bg-color);
+    color: var(--vecko-green);
 
     display: inline-flex;
     align-items: stretch;
     width: 100%;
     justify-content: space-between;
+
+    border-bottom: 0.1em solid var(--vecko-green);
 }
 
 
 
 .navbar a {
-    color: var(--main-bg-color);
+    color: var(--vecko-green);
     text-decoration: none;
     align-self: center;
 }
