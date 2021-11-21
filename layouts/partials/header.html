@@ -1,8 +1,8 @@
 <!-- Navbar -->
 <div class="navbar">
-  <a href='{{ "/" | absURL }}' class="site-title">{{ .Site.Title }}</a>
+  <a href='{{ "/" | relURL }}' class="site-title">{{ .Site.Title }}</a>
   <!-- Nav menu -->
-  <a href='{{ "/" | absURL }}' class="nav-item">Home</a>
+  <a href='{{ "/" | relURL }}' class="nav-item">Home</a>
   <a href='{{ "posts" | absURL }}' class="nav-item">Posts</a>
   <a href='{{ "animations" | absURL }}' class="nav-item">Animations</a>
   <a href='{{ "about" | absURL }}' class="nav-item">About</a>
