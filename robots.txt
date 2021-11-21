@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://veckothegecko.github.io/vecko.me/sitemap.xml
