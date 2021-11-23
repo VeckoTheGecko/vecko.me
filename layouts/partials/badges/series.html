@@ -1,0 +1,14 @@
+{{ $colour_map := site.Data.colourmaps.series }}
+
+<!-- Setting defaults -->
+{{ $fill_colour := $colour_map.default.fill_colour }}
+{{ $font_colour := $colour_map.default.font_colour }}
+
+<!-- Checking if it exists in colourmap -->
+{{ if isset $colour_map . }}
+    {{ $tag_data := index $colour_map . }}
+    {{ $fill_colour = $tag_data.fill_colour }}
+    {{ $font_colour = $tag_data.font_colour }}
+{{ end }}
+
+<a class="series" href='{{ "/series/" | relLangURL }}{{ . | urlize }}' style="background-color: {{ $fill_colour }};color: {{ $font_colour }};">{{ . }}</a>

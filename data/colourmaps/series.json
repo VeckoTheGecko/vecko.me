@@ -1,0 +1,10 @@
+{
+    "default": {
+        "fill_colour": "def_fill_colour",
+        "font_colour": "def_font_colour"
+    },
+    "Kaggle": {
+        "fill_colour": "#26d3ed",
+        "font_colour": "black"
+    }
+}

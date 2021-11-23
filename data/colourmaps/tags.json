@@ -1,0 +1,38 @@
+{
+    "default": {
+        "fill_colour": "grey",
+        "font_colour": "black"
+    },
+    "Python": {
+        "fill_colour": "#4e5cda",
+        "font_colour": "white"
+    },
+    "R": {
+        "fill_colour": "#1f65b7",
+        "font_colour": "white"
+    },
+    "Data Analysis": {
+        "fill_colour": "fill_colour",
+        "font_colour": "font_colour"
+    },
+    "YouTube": {
+        "fill_colour": "#c4302b",
+        "font_colour": "white"
+    },
+    "Project": {
+        "fill_colour": "fill_colour",
+        "font_colour": "font_colour"
+    },
+    "Tutorial": {
+        "fill_colour": "fill_colour",
+        "font_colour": "font_colour"
+    },
+    "Research": {
+        "fill_colour": "fill_colour",
+        "font_colour": "font_colour"
+    },
+    "Oceans": {
+        "fill_colour": "fill_colour",
+        "font_colour": "font_colour"
+    }
+}

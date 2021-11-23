@@ -1,6 +1,8 @@
-<div class="post-preview" style="border-style: solid; cursor: pointer; margin: 1em;" onclick="location.href={{ .Permalink }}">
-    <h2>{{ .Title }}</h2>
-    <p>{{ time.Format "Jan 2, 2006" .Date }}</p>
+<div class="post-preview" style="border-style: solid; margin: 1em;" >
+    <div onclick="location.href={{ .Permalink }}" style="cursor: pointer">
+        <h2>{{ .Title }}</h2>
+        <p>{{ time.Format "Jan 2, 2006" .Date }}</p>
+    </div>
     {{ if .Params.youtube }}
         <a href="{{ . }}"> Youtube</a>
     {{ end }}
@@ -8,17 +10,17 @@
         <a href="{{ . }}"> Github</a>
     {{ end }}
     <br>
+    {{ if .Params.series }}
+        {{ partial "badges/series.html" .Params.series }} | 
+    {{ end }}
+
     {{ if .Params.tags }}
-        Tags:
         {{ range .Params.tags }}
-            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+            {{ partial "badges/tag.html" . }}
         {{ end }}
         <br>
     {{ end }}
-    {{ if .Params.series }}
-        Series:
-        <a href='{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}'>{{ .Params.series }}</a>
-    {{ end }}
+    
     
     <p>{{ .Summary }}</p>
 </div>
