@@ -11,15 +11,14 @@
     {{ end }}
     <br>
     {{ if .Params.series }}
-        {{ partial "badges/series.html" .Params.series }} | 
+        {{ partial "badges/series.html" .Params.series }} || 
     {{ end }}
-
     {{ if .Params.tags }}
         {{ range .Params.tags }}
             {{ partial "badges/tag.html" . }}
         {{ end }}
-        <br>
     {{ end }}
+    <br>
     
     
     <p>{{ .Summary }}</p>
