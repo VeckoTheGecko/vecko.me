@@ -1,6 +1,7 @@
 baseURL: 'http://vecko.me/vecko.me/'
 languageCode: 'en-us'
-author: Nick Hodgskin
+author:
+  name: Nick Hodgskin
 title: Vecko
 
 taxonomies:
