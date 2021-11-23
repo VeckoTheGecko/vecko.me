@@ -4,7 +4,7 @@
         "font_colour": "black"
     },
     "Python": {
-        "fill_colour": "#4e5cda",
+        "fill_colour": "#d4af37",
         "font_colour": "white"
     },
     "R": {
@@ -12,8 +12,8 @@
         "font_colour": "white"
     },
     "Data Analysis": {
-        "fill_colour": "fill_colour",
-        "font_colour": "font_colour"
+        "fill_colour": "#1f65b7",
+        "font_colour": "white"
     },
     "YouTube": {
         "fill_colour": "#c4302b",

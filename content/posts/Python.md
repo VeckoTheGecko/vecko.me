@@ -6,7 +6,7 @@ draft: true
 maths: true # Bool. Katex support
 
 # Organisation
-tags: [Python] # Relevant tags
+tags: [Python, R, test, YouTube] # Relevant tags
 series: Kaggle # Optional
 thumbnail: # URL to post thumbnail
 

@@ -7,7 +7,7 @@
         <!-- List of tags + counts -->
         <p>Browse by tag</p>
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-            <a href="/tags/{{ $name | urlize }}">{{ $name | humanize }} (x{{ $taxonomy.Count }})</a>
+            {{ partial "badges/tag.html" ($name | humanize) }} (x{{ $taxonomy.Count }})
         {{end}}
     </div>
 
@@ -15,7 +15,7 @@
         <!-- List of series + counts -->
         <p>Browse by Series</p>
         {{ range $name, $taxonomy := .Site.Taxonomies.series }}
-            <a href="/series/{{ $name | urlize }}">{{ $name | humanize }} (x{{ $taxonomy.Count }})</a>
+        {{ partial "badges/series.html" ($name | humanize) }} (x{{ $taxonomy.Count }})</a>
         {{end}}
     </div>
 
