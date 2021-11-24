@@ -148,3 +148,33 @@ h3 {
     margin-right: 0.3em;
     border-radius: 0.2em;
 }
+
+/* Font awesome icons */
+
+/* Add a hover effect if you want */
+.fa.button:hover {
+  filter: grayscale(0);
+}
+
+.fa.button {
+  font-size: 3em;
+  text-decoration: none;
+  border-radius: 0.1em;
+  transition: 0.1s ease-in-out;
+}
+
+/* GitHub */
+.fa-github-square.button {
+  text-align: center;
+  color: #800080;
+  background: var(--summary-backing);
+  filter: grayscale(1);
+}
+
+/* YouTube */
+.fa-youtube-square.button {
+  text-align: center;
+  color: #ff0000;
+  background: var(--summary-backing);
+  filter: grayscale(1);
+}
