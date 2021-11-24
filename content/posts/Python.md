@@ -11,8 +11,8 @@ series: Kaggle # Optional
 thumbnail: # URL to post thumbnail
 
 # Linking
-github: # Optional: URL for specific GitHub repo
-youtube: # Optional: URL for specific YouTube video from the channel
+github: https://github.com/VeckoTheGecko # Optional: URL for specific GitHub repo
+youtube: yout # Optional: URL for specific YouTube video from the channel
 ---
 My new post!
 

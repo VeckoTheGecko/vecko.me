@@ -3,16 +3,20 @@
         <h2>{{ .Title }}</h2>
         <p>{{ time.Format "Jan 2, 2006" .Date }}</p>
     </div>
+    <div>
     {{ if .Params.youtube }}
-        <a href="{{ . }}"> Youtube</a>
+        <a href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
     {{ end }}
+
     {{ if .Params.github }}
-        <a href="{{ . }}"> Github</a>
+        <a href="{{ .Params.github }}" class="fa fa-github-square button"></a>
     {{ end }}
+    </div>
     <br>
     {{ if .Params.series }}
         {{ partial "badges/series.html" .Params.series }} || 
     {{ end }}
+    
     {{ if .Params.tags }}
         {{ range .Params.tags }}
             {{ partial "badges/tag.html" . }}
