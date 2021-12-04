@@ -1,0 +1,30 @@
+.posts-page-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.posts-page-container > *{
+    display: inline;
+}
+
+.nav-by-tag {
+    width: 20%;
+    margin: 0 1em;
+}
+
+.post-previews {
+    width: 80%;
+}
+
+.badge-count {
+    margin: 0.5em 0;
+}
+
+.browse-by {
+    font-weight: bold;
+}
+
+.browse-by-container {
+    margin: 1em 0;
+}

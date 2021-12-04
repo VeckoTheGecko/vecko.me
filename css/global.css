@@ -41,7 +41,16 @@ a {
 
   /* height: 15.5em;for when image is added */
   height: 10em;
-  overflow:hidden
+  overflow: hidden;
+  user-select: none;
+}
+
+.post-date {
+  color: var(--less-emphasis-grey);
+}
+
+.post-summary {
+  font-size: 0.8em;
 }
 
 /* Header */
@@ -172,20 +181,19 @@ h3 {
   transition: 0.1s ease-in-out;
 }
 
-/* GitHub */
-.fa-github-square.button {
+/* GitHub and YouTube post preview buttons*/
+.fa-github-square.button, .fa-youtube-square.button {
   text-align: center;
-  color: #800080;
+  color: var(--less-emphasis-grey);
   background: var(--summary-backing);
-  filter: grayscale(1);
 }
 
-/* YouTube */
-.fa-youtube-square.button {
-  text-align: center;
+.fa-github-square.button:hover {
+  color: #800080;
+}
+
+.fa-youtube-square.button:hover {
   color: #ff0000;
-  background: var(--summary-backing);
-  filter: grayscale(1);
 }
 
 .post-preview-buttons {
@@ -194,4 +202,14 @@ h3 {
 }
 .post-preview-buttons > * {
   padding: 0 0.1em 0 0.1em;
+}
+
+.footer {
+  margin: auto;
+  text-align: center;
+  height: 3em;
+}
+
+.footer, .footer * {
+  color: var(--less-emphasis-grey);
 }
