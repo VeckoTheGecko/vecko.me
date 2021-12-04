@@ -13,5 +13,7 @@ thumbnail: # URL to post thumbnail
 # Linking
 github: # Optional: URL for specific GitHub repo
 youtube: # Optional: URL for specific YouTube video from the channel
+
+summary: # Optional
 ---
 

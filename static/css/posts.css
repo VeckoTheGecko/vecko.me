@@ -1,7 +1,7 @@
 .posts-page-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .posts-page-container > *{
@@ -14,7 +14,11 @@
 }
 
 .post-previews {
-    width: 80%;
+    /* padding: 0 15%; */
+}
+
+.browse-by-container {
+    margin: 1em 0;
 }
 
 .badge-count {
@@ -23,8 +27,4 @@
 
 .browse-by {
     font-weight: bold;
-}
-
-.browse-by-container {
-    margin: 1em 0;
 }

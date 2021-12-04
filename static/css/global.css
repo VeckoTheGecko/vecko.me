@@ -35,6 +35,7 @@ a {
   border-color: var(--less-emphasis-grey);
   border-radius: 1em;
 
+  width: 45em;
   margin: 1em 0;
   padding: 1em;
   background-color: var(--summary-backing);

@@ -12,9 +12,9 @@
             <div class="browse-by-container">
                 <!-- List of tags + counts -->
                 <p class="browse-by">Browse by tag</p>
-                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                {{ range (sort .Site.Taxonomies.tags "Count" "desc") }}
                     <div class="badge-count">
-                        {{ partial "badges/tag.html" (.Page.Title) }} (x{{ $taxonomy.Count }})
+                        {{ partial "badges/tag.html" .Page.Title }} (x{{ .Count }})
                     </div>
                 {{end}}
             </div>
@@ -22,9 +22,9 @@
             <div class="browse-by-container">
                 <!-- List of series + counts -->
                 <p class="browse-by">Browse by series</p>
-                {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+                {{ range (sort .Site.Taxonomies.series "Count" "desc") }}
                     <div class="badge-count">
-                        {{ partial "badges/series.html" ($name | humanize) }} (x{{ $taxonomy.Count }})</a>
+                        {{ partial "badges/series.html" .Page.Title }} (x{{ .Count }})</a>
                     </div>
 
                 {{end}}
