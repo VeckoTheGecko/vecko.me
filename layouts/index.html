@@ -1,7 +1,11 @@
+{{ define "custom-head" }}
+    <link rel="stylesheet" href='{{"css/index.css" | absURL}}'>
+{{ end }}
+
 {{ define "main" }}
 <h1>Welcome to the home of Vecko!!</h1>
-<h1>Hot off the press</h1>
-<div style="border-style: solid;">
+<div class="hot-off-the-press">
+    <h1>Hot off the press</h1>
     <!-- Finding posts by reverse date -->
     {{ range (and (where .Site.RegularPages "Type" "posts")).ByDate.Reverse }}
         <!-- Checking post is in the last month. -->
@@ -9,5 +13,8 @@
         {{ partial "postpreview.html" . }}
         {{end}}
     {{ end }}
+    <a class="more-posts-button" href='{{ "posts" | absURL }}'>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>  More posts
+    </a>
 </div>
 {{end}}

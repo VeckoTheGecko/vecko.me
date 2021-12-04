@@ -1,28 +1,30 @@
-<div class="post-preview" style="border-style: solid; margin: 1em;" >
+<div class="post-preview" >
     <div onclick="location.href={{ .Permalink }}" style="cursor: pointer">
         <h2>{{ .Title }}</h2>
+        
+        <div class="post-preview-buttons">
+            {{ if .Params.youtube }}
+            <a href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
+            {{ end }}
+            
+            {{ if .Params.github }}
+            <a href="{{ .Params.github }}" class="fa fa-github-square button"></a>
+            {{ end }}
+        </div>
         <p>{{ time.Format "Jan 2, 2006" .Date }}</p>
     </div>
-    <div>
-    {{ if .Params.youtube }}
-        <a href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
-    {{ end }}
-
-    {{ if .Params.github }}
-        <a href="{{ .Params.github }}" class="fa fa-github-square button"></a>
-    {{ end }}
-    </div>
-    <br>
-    {{ if .Params.series }}
-        {{ partial "badges/series.html" .Params.series }} || 
-    {{ end }}
     
-    {{ if .Params.tags }}
-        {{ range .Params.tags }}
-            {{ partial "badges/tag.html" . }}
+    <div class="tags-container">
+        {{ if .Params.series }}
+            {{ partial "badges/series.html" .Params.series }} || 
         {{ end }}
-    {{ end }}
-    <br>
+        
+        {{ if .Params.tags }}
+            {{ range .Params.tags }}
+                {{ partial "badges/tag.html" . }}
+            {{ end }}
+        {{ end }}
+    </div>
     
     
     <p>{{ .Summary }}</p>
