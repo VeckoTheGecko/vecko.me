@@ -1,18 +1,16 @@
-<div class="post-preview" >
-    <div onclick="location.href={{ .Permalink }}" style="cursor: pointer">
-        <h2>{{ .Title }}</h2>
+<div class="post-preview" onclick="location.href={{ .Permalink }}" style="cursor: pointer">
+    <h2>{{ .Title }}</h2>
+    
+    <div class="post-preview-buttons">
+        {{ if .Params.youtube }}
+        <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
+        {{ end }}
         
-        <div class="post-preview-buttons">
-            {{ if .Params.youtube }}
-            <a href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
-            {{ end }}
-            
-            {{ if .Params.github }}
-            <a href="{{ .Params.github }}" class="fa fa-github-square button"></a>
-            {{ end }}
-        </div>
-        <p>{{ time.Format "Jan 2, 2006" .Date }}</p>
+        {{ if .Params.github }}
+        <a title="Go to GitHub repo" href="{{ .Params.github }}" class="fa fa-github-square button"></a>
+        {{ end }}
     </div>
+    <p class="post-date">{{ time.Format "Jan 2, 2006" .Date }}</p>
     
     <div class="tags-container">
         {{ if .Params.series }}
@@ -27,5 +25,5 @@
     </div>
     
     
-    <p>{{ .Summary }}</p>
+    <p class="post-summary">{{ .Summary }}</p>
 </div>
