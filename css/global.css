@@ -46,6 +46,11 @@ a {
   user-select: none;
 }
 
+.post-preview:hover {
+  transform: scale(1.03);
+  transition: all 0.05s ease-in-out;
+}
+
 .post-date {
   color: var(--less-emphasis-grey);
 }
