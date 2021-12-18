@@ -3,18 +3,33 @@
 {{ end }}
 
 {{ define "main" }}
-<h1>Welcome to the home of Vecko!!</h1>
+<div class="welcome-container">
+    <h1 id="welcome">Welcome to the home of</h1>
+    <img id="vecko-image" src='{{"images/vecko-written.svg" | absURL}}' alt="An image of the word Vecko handwritten">
+    <p id="tagline">a site of maths, data science, and computational exploration</p>
+</div>
+
 <div class="hot-off-the-press">
-    <h1>Hot off the press</h1>
+    <h2>Hot off the press</h2>
     <!-- Finding posts by reverse date -->
+    {{ $press_empty := true }}
     {{ range (and (where .Site.RegularPages "Type" "posts")).ByDate.Reverse }}
         <!-- Checking post is in the last month. -->
         {{ if and (lt .Date.Unix now.Unix) (gt .Date.Unix (sub now.Unix 2678400))}}
-        {{ partial "postpreview.html" . }}
+            {{ $press_empty = false }}
+            {{ partial "postpreview.html" . }}
         {{end}}
     {{ end }}
+    {{ if $press_empty }}
+        <div class="no-fresh" style="margin:2em; width: 45em; color: #989898; text-align: center;">
+            Nothing fresh off the press, check back later 😁
+        </div>
+    {{ end }}
+
     <a class="more-posts-button" href='{{ "posts" | absURL }}'>
         <i class="fa fa-arrow-right" aria-hidden="true"></i>  More posts
     </a>
+
+
 </div>
 {{end}}
