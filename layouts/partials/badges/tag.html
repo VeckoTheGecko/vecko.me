@@ -11,4 +11,6 @@
     {{ $font_colour = $tag_data.font_colour }}
 {{ end }}
 
-<a class="tag" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' style="background-color: {{ $fill_colour }};color: {{ $font_colour }};">{{ . }}</a>
+<a class="tag skew" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' style="background-color: {{ $fill_colour }};color: {{ $font_colour }};">
+    <span class="unskew">{{ . }}</span>
+</a>
