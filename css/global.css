@@ -155,28 +155,34 @@ form.search-container input {
   margin: 0.1em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-top: 0.5em;
+  font-size: 1.3em;
+}
+
 h1 {
   font-size: 2.25em;
-  font-weight: 600;
-  margin: 0;
 }
 
 h2 {
-  display: inline;
   font-size: 1.5em;
-  font-weight: 600;
-  margin: 0;
-  margin-right: 1em;
   /* margin-bottom: 0.5em; */
 }
 
 h3 {
-  display: inline;
   font-size: 1.5em;
-  font-weight: 300;
-  margin: 0;
+}
+
+.post-preview h2{
+  font-size: 1.5em;
+  display: inline;
   margin-right: 1em;
-  /* margin-bottom: 0.5em; */
 }
 
 .tags-container {
@@ -189,6 +195,11 @@ h3 {
     padding-bottom: 0.2em;
     text-decoration: none;
 }
+.tag:hover,
+.series:hover{
+  text-decoration: underline;
+}
+
 .tag {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -203,14 +214,22 @@ h3 {
     border-radius: 0.2em;
 }
 
-/* Font awesome icons */
 
-/* Add a hover effect if you want */
-.fa.button:hover {
+
+/* Post preview buttons */
+.post-preview-buttons {
+  display: inline;
+  float: right;
+}
+.post-preview-buttons > * {
+  padding: 0 0.1em 0 0.1em;
+}
+/* Hover effects */
+.post-preview-buttons .fa.button:hover {
   filter: grayscale(0);
 }
 
-.fa.button {
+.post-preview-buttons .fa.button {
   font-size: 3em;
   text-decoration: none;
   border-radius: 0.1em;
@@ -218,25 +237,24 @@ h3 {
 }
 
 /* GitHub and YouTube post preview buttons*/
-.fa-github-square.button, .fa-youtube-square.button {
+.post-preview-buttons .fa-github-square.button, .fa-youtube-square.button {
   text-align: center;
   color: var(--less-emphasis-grey);
   background: var(--summary-backing);
 }
 
-.fa-github-square.button:hover {
+.post-preview-buttons .fa-github-square.button:hover {
   color: #800080;
 }
 
-.fa-youtube-square.button:hover {
+.post-preview-buttons .fa-youtube-square.button:hover {
   color: #ff0000;
 }
 
-.post-preview-buttons {
-  display: inline;
-  float: right;
+.github-purple{
+  background-color: #800080;
 }
-.post-preview-buttons > * {
-  padding: 0 0.1em 0 0.1em;
+.youtube-red{
+  background-color: #ff0000;
 }
 

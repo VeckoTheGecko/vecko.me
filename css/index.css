@@ -28,6 +28,9 @@
 
 #welcome {
   text-align: center;
+  font-size: 2.25em;
+  font-weight: 600;
+  margin: 0;
   /* padding-left: 30%;
   padding-right: 30%; */
 }
@@ -41,6 +44,10 @@
 
 #tagline{
   text-align: center;
+}
+
+#hot-off-the-press{
+  
 }
 
 .no-fresh{
