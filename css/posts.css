@@ -1,3 +1,12 @@
+#title {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.search-container{
+    margin: auto;
+}
+
 .posts-page-container {
     display: flex;
     flex-direction: row-reverse;
