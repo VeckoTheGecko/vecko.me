@@ -258,3 +258,7 @@ h3 {
   background-color: #ff0000;
 }
 
+.main {
+  width: 80%;
+  margin: auto;
+}

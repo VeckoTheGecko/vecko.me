@@ -3,10 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-    <h1>Posts</h1>
-    This is the posts list template
+    <h1 id="title">Posts</h1>
     {{ .Content }}
-    {{ partial "searchposts.html" "posts-search"}}
+    {{/*  {{ partial "searchposts.html" "posts-search"}}  */}}
     <div class="posts-page-container">
         <div class="nav-by-tag">
             <div class="browse-by-container">

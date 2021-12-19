@@ -10,7 +10,7 @@
 </div>
 
 <div class="hot-off-the-press">
-    <h2>Hot off the press</h2>
+    <h2 id="hot-off-the-press">Hot off the press</h2>
     <!-- Finding posts by reverse date -->
     {{ $press_empty := true }}
     {{ range (and (where .Site.RegularPages "Type" "posts")).ByDate.Reverse }}
