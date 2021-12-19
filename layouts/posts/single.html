@@ -3,7 +3,8 @@
 {{ end }}
 
 {{ define "main" }}
-    <h1>
+<article>
+    <h1 id="main-title">
         {{ .Title }}
     </h1>
     {{ if .Params.series }}
@@ -12,6 +13,13 @@
         </div>
     {{ end }}
     
+    {{ if .Params.tags }}
+    <div class="tag-container">
+        {{ range .Params.tags }}
+        {{ partial "badges/tag.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
     <div id="posted-date">
         <i class="fa fa-calendar" aria-hidden="true" style="padding-right: 0.5em;"></i>Posted {{ time.Format "2 January 2006 @ 3:04pm" .Date }}
     </div>
@@ -19,30 +27,21 @@
         <i class="fa fa-coffee" aria-hidden="true" style="padding-right: 0.4em;"></i>{{printf "%d min" .ReadingTime}}
     </div>
 
-    {{ if .Params.series }}
-    <div>
-        {{ range .Params.tags }}
-        {{ partial "badges/tag.html" . }}
-        {{ end }}
-    </div>
+
+    {{ if or .Params.youtube .Params.github}}
+        <div class="buttons-container">
+            {{ if .Params.youtube}}
+            {{ partial "buttons/youtube.html" .Params.youtube }}
+            {{end}}
+            
+            {{ if .Params.github}}
+            {{ partial "buttons/github.html" .Params.github }}
+            {{end}}
+        </div>
     {{ end }}
-
-    <div>
-        {{ if .Params.youtube}}
-        <a href="{{.Params.youtube}}">Youtube</a>
-        {{end}}
-        {{ if .Params.github}}
-        <a href="{{.Params.github}}">GitHub</a>
-        {{end}}
-
-
-    </div>
-    <h2>
-        {{ time.Format "Jan 2, 2006 @ 3:04pm" .Date }}
-    </h2>
-    <h3>Reading time: </h3>
-
     
-
-    {{ .Content }}
+    <section class="article-body">
+        {{ .Content }}
+    </section>
+</article>
 {{end}}
