@@ -1,0 +1,17 @@
+{{ define "custom-head" }}
+    <link rel="stylesheet" href='{{"css/posts.css" | absURL}}'>
+{{ end }}
+
+{{ define "main" }}
+    <div id="title">Posts from the {{ partial "badges/series.html" .Title }} series</div>
+    {{ .Content }}
+    {{/*  {{ partial "searchposts.html" "posts-search"}}  */}}
+    <div class="posts-page-container">
+        <div class="post-previews">
+            {{ range .Pages }}
+                {{ partial "postpreview.html" . }}
+            {{ end }}
+        </div>
+    </div>
+
+{{end}}
