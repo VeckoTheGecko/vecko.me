@@ -1,8 +1,31 @@
+{{ define "custom-head" }}
+    <link rel="stylesheet" href='{{"css/post-single.css" | absURL}}'>
+{{ end }}
+
 {{ define "main" }}
-    This is the post template
     <h1>
         {{ .Title }}
     </h1>
+    {{ if .Params.series }}
+        <div>
+            Series: {{ partial "badges/series.html" .Params.series }}
+        </div>
+    {{ end }}
+    
+    <div id="posted-date">
+        <i class="fa fa-calendar" aria-hidden="true" style="padding-right: 0.5em;"></i>Posted {{ time.Format "2 January 2006 @ 3:04pm" .Date }}
+    </div>
+    <div id="reading-time">
+        <i class="fa fa-coffee" aria-hidden="true" style="padding-right: 0.4em;"></i>{{printf "%d min" .ReadingTime}}
+    </div>
+
+    {{ if .Params.series }}
+    <div>
+        {{ range .Params.tags }}
+        {{ partial "badges/tag.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
 
     <div>
         {{ if .Params.youtube}}
@@ -17,7 +40,7 @@
     <h2>
         {{ time.Format "Jan 2, 2006 @ 3:04pm" .Date }}
     </h2>
-    <h3>Reading time: {{printf "%d min" .ReadingTime}}</h3>
+    <h3>Reading time: </h3>
 
     
 
