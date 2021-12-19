@@ -4,10 +4,6 @@
     margin-bottom: 0.5em;
 }
 
-/* .search-container{
-    margin: auto;
-} */
-
 .posts-page-container {
     display: flex;
     flex-direction: row-reverse;
