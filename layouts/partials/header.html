@@ -1,7 +1,9 @@
 <!-- Navbar -->
 <div class="navbar">
-  <a href='{{ "/" | relURL }}' class="site-title">{{ .Site.Title }}</a>
+  <a href='{{ .Site.BaseURL }}' class="site-title">{{ .Site.Title }}</a>
+
   <!-- Nav menu -->
-  <a href='{{ "/" | relURL }}' class="nav-item">Home</a>
-  <a href='{{ "posts" | absURL }}' class="nav-item">Posts</a>  
+  {{ range .Site.Menus.nav }}
+  <a href=" {{ .URL }}" class="nav-item">{{ .Name }}</a>
+  {{ end }}
 </div>

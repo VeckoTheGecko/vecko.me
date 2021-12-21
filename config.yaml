@@ -8,6 +8,18 @@ taxonomies:
   tag: tags
   series: series
 
+menu:
+  nav:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts/"
+      weight: 2
+
+
 markup:
   highlight:
     anchorLineNos: true
