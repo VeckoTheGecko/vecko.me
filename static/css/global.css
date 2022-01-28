@@ -10,11 +10,6 @@
   padding: 0;
 }
 
-
-
-
-
-
 footer {
   position: absolute;
   bottom: 0;
@@ -23,18 +18,15 @@ footer {
 }
 
 body {
-  min-height:100vh;
-  position:relative; 
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  position: relative;
 
   font-family: Poppins;
-  color: white;
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }
 
 body::after {
-  content: '';
+  content: "";
   display: block;
   height: 3em; /* Set same as footer's height */
 }
@@ -45,19 +37,14 @@ body::after {
   height: 3em;
 }
 
-.footer, .footer * {
+.footer,
+.footer * {
   color: var(--less-emphasis-grey);
-}
-
-.main {
-  /* Main section */
-  padding: 2em;
 }
 
 a {
   color: white;
 }
-
 
 .post-preview {
   border-style: solid;
@@ -162,35 +149,32 @@ h3 {
   font-size: 1.5em;
 }
 
-.post-preview h2{
+.post-preview h2 {
   font-size: 1.5em;
   display: inline;
   margin-right: 1em;
 }
 
-.tags-container {
-  padding: 0.5em 0;
-}
 .tag,
 .series {
-    font-family: Consolas;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    text-decoration: none;
+  font-family: Consolas;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  text-decoration: none;
 }
 .tag:hover,
-.series:hover{
+.series:hover {
   text-decoration: underline;
 }
 
 .tag {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border-radius: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.2em;
 }
 .skew {
-    display: inline-flex;
-    transform: skewX(-15deg);
+  display: inline-flex;
+  transform: skewX(-15deg);
 }
 
 .unskew {
@@ -198,14 +182,12 @@ h3 {
 }
 
 .series {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-    border-radius: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  border-radius: 0.2em;
 }
-
-
 
 /* Post preview buttons */
 .post-preview-buttons {
@@ -228,7 +210,8 @@ h3 {
 }
 
 /* GitHub and YouTube post preview buttons*/
-.post-preview-buttons .fa-github-square.button, .fa-youtube-square.button {
+.post-preview-buttons .fa-github-square.button,
+.fa-youtube-square.button {
   text-align: center;
   color: var(--less-emphasis-grey);
   background: var(--summary-backing);
@@ -242,10 +225,10 @@ h3 {
   color: #ff0000;
 }
 
-.github-purple{
+.github-purple {
   background-color: #800080;
 }
-.youtube-red{
+.youtube-red {
   background-color: #ff0000;
 }
 

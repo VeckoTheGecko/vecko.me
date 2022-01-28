@@ -1,4 +1,4 @@
-<div class="post-preview" onclick="location.href={{ .Permalink }}" style="cursor: pointer">
+<!-- <div class="post-preview" onclick="location.href={{ .Permalink }}" style="cursor: pointer">
     <h2>{{ .Title }}</h2>
     
     <div class="post-preview-buttons">
@@ -26,4 +26,24 @@
     
     
     <p class="post-summary">{{ .Summary | plainify}}</p>
-</div>
+</div> -->
+
+<div class="card text-dark" onclick="location.href={{ .Permalink }}" style="cursor: pointer;">
+    <!-- <img src="" class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title mb-1">{{ .Title }}</h5>
+      <p class="card-text m-1"><small class="text-muted">{{ time.Format "Jan 2, 2006" .Date }}</small></p>
+      <div class="tags-container">
+        {{ if .Params.series }}
+            {{ partial "badges/series.html" .Params.series }} || 
+        {{ end }}
+        
+        {{ if .Params.tags }}
+            {{ range .Params.tags }}
+                {{ partial "badges/tag.html" . }}
+            {{ end }}
+        {{ end }}
+        </div>
+      <p class="card-text">{{ .Summary | plainify}}</p>
+    </div>
+  </div>
