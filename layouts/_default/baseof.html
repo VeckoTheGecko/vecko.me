@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,9 @@
 
     {{end}}
 </head>
-<body class="container bg-dark text-light">
+<body class="container bg-dark text-light d-flex flex-column h-100">
     {{ partial "header.html" . }}
-    <div class="main container pt-4">
+    <div class="main container pt-4 flex-shrink-0">
         {{ block "main" .}}
 
         {{end}}
