@@ -28,10 +28,24 @@
     <p class="post-summary">{{ .Summary | plainify}}</p>
 </div> -->
 
-<div class="card text-dark" onclick="location.href={{ .Permalink }}" style="cursor: pointer;">
+<div class="card bg-dark p-2" onclick="location.href={{ .Permalink }}" style="cursor: pointer;">
     <!-- <img src="" class="card-img-top" alt="..."> -->
     <div class="card-body">
-      <h5 class="card-title mb-1">{{ .Title }}</h5>
+        <div class="d-flex">
+            <h5 class="card-title my-1 me-2">{{ .Title }}</h5>
+            <div class="ms-auto d-none d-lg-block">
+                <!-- External links -->
+                {{ if .Params.youtube }}
+                <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="btn btn-outline-danger btn-sm"><i class="bi bi-youtube"></i> YouTube</a>
+                {{ end }}
+                
+                {{ if .Params.github }}
+                <a title="Go to GitHub repo" href="{{ .Params.github }}" class="btn btn-outline-light btn-sm"><i class="bi bi-github"></i> GitHub Repo</a>
+                {{ end }}
+            </div>
+        </div>
+      
+      
       <p class="card-text m-1"><small class="text-muted">{{ time.Format "Jan 2, 2006" .Date }}</small></p>
       <div class="tags-container">
         {{ if .Params.series }}
@@ -44,6 +58,7 @@
             {{ end }}
         {{ end }}
         </div>
-      <p class="card-text">{{ .Summary | plainify}}</p>
+      
+      <p class="card-text d-none d-md-block">{{ .Summary | plainify}}</p>
     </div>
   </div>
