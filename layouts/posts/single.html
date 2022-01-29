@@ -34,11 +34,11 @@
         <div class="container px-0 my-2">
             <!-- External links -->
             {{ if .Params.youtube }}
-            <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="btn btn-outline-danger my-1"><i class="bi bi-youtube"></i> YouTube</a>
+            <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="btn btn-youtube my-1"><i class="bi bi-youtube"></i> YouTube</a>
             {{ end }}
             
             {{ if .Params.github }}
-            <a title="Go to GitHub repo" href="{{ .Params.github }}" class="btn btn-outline-light my-1"><i class="bi bi-github"></i> GitHub Repo</a>
+            <a title="Go to GitHub repo" href="{{ .Params.github }}" class="btn btn-github my-1"><i class="bi bi-github"></i> GitHub Repo</a>
             {{ end }}
         </div>
     {{ end }}
