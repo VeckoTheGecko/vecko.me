@@ -1,32 +1,32 @@
 #title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 .posts-page-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-.posts-page-container > *{
-    display: inline;
+.posts-page-container > * {
+  display: inline;
 }
 
 .nav-by-tag {
-    width: 20%;
-    margin: 0 1em;
+  width: 20%;
+  margin: 0 1em;
 }
 
 .browse-by-container {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .badge-count {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .browse-by {
-    font-weight: bold;
+  font-weight: bold;
 }

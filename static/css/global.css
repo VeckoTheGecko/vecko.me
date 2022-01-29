@@ -19,83 +19,21 @@
 }
 
 body {
-  /* min-height: 100vh; */
-  /* position: relative; */
-
   font-family: Poppins;
-  /* background-color: var(--main-bg-color); */
 }
 
 a {
   color: white;
 }
 
-.post-preview {
-  border-style: solid;
-  border-width: 0.1em;
-  border-color: var(--less-emphasis-grey);
-  border-radius: 1em;
-
-  width: 45em;
-  margin: 1em 0;
-  padding: 1em;
-  background-color: var(--summary-backing);
-
-  /* height: 15.5em;for when image is added */
-  height: 10em;
-  overflow: hidden;
-  user-select: none;
-}
-
-.post-preview:hover {
-  transform: scale(1.03);
-  transition: all 0.05s ease-in-out;
-}
-
-.post-date {
-  color: var(--less-emphasis-grey);
-}
-
-.post-summary {
-  font-size: 0.8em;
-}
-
 /* Header */
 .navbar {
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-  background-color: var(--main-bg-color);
-  color: var(--vecko-green);
-
-  display: inline-flex;
-  align-items: stretch;
-  width: 100%;
-
   border-bottom: 0.1em solid var(--vecko-green);
 }
 
-.navbar a {
+.site-title {
   color: var(--vecko-green);
   text-decoration: none;
-  align-self: center;
-}
-
-.navbar > * {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-a.nav-item {
-  transition: all 0.05s ease-in-out;
-}
-
-a.nav-item:hover {
-  text-decoration: underline;
-  transform: scale(1.1);
-}
-
-.site-title {
   font-size: 1.6em;
   font-weight: bolder;
 }
@@ -133,12 +71,6 @@ h3 {
   font-size: 1.5em;
 }
 
-.post-preview h2 {
-  font-size: 1.5em;
-  display: inline;
-  margin-right: 1em;
-}
-
 /* TAGS */
 .tag,
 .series {
@@ -167,4 +99,3 @@ h3 {
 .youtube-red {
   background-color: #ff0000;
 }
-

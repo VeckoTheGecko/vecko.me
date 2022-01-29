@@ -1,40 +1,10 @@
-.main{
-    width: 80%;
-    margin: auto;
-}
-
 #main-title {
-    font-style: normal;
-    font-weight: 200;
-    margin-bottom: 0.5em;
-    font-size: 2.5em;
-    margin-top: 0;
-    color: white;
-}
-
-.associated-link{
-    margin: 0.5em 0;
-    padding: 0.5em;
-    font-size: 1.1em;
-    width: 10em;
-    border-radius: 0.4em;
-    cursor: pointer;
-}
-
-.associated-link:hover{
-    transform: scale(1.02);
-}
-
-.buttons-container{
-    margin: 2em 0;
-}
-
-.tag-container{
-    margin: 0.5em 0;
-}
-
-#reading-time, #posted-date{
-    color: var(--less-emphasis-grey)
+  font-style: normal;
+  font-weight: 200;
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+  margin-top: 0;
+  color: white;
 }
 
 h1,
@@ -42,12 +12,6 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-style: italic;
 }
-
-div.highlight > div {
-    margin: 1em 0;
-    padding: 0.5em;
-}
-

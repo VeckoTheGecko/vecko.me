@@ -3,10 +3,10 @@
 {{ end }}
 
 {{ define "main" }}
-    <div id="title">Posts from the {{ partial "badges/tag.html" .Title }} tag</div>
+    <div id="title">Posts in {{ partial "badges/tag.html" .Title }}</div>
     {{ .Content }}
     <div class="posts-page-container">
-        <div class="post-previews">
+        <div id="post-previews">
             {{ range .Pages }}
                 {{ partial "postpreview.html" . }}
             {{ end }}
