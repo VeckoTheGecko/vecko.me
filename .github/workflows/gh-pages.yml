@@ -21,6 +21,7 @@ jobs:
 
       - name: Installing npm env
         run: npm install
+        run: npm install -g node-sass
 
       - name: Compiling sass
         run: npm run compile:sass
