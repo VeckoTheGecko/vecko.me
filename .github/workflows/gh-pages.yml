@@ -5,7 +5,7 @@ on:
     branches:
       - main # Set a branch to deploy
   schedule:
-    - cron: "0 0 * * *" # Daily website build
+    - cron: "1 0 * * *" # Daily website build
 
 jobs:
   deploy:
