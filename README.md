@@ -4,7 +4,7 @@ Welcome to my website!! This website is all about maths, data science and comput
 
 # How did I build this site
 
-I built this website by creating a custom Hugo template. The template also uses Bootstrap 5 for a lot of the layout, components and icons (I have come to find that I am bad at CSS). The website also has LaTeX support (through KaTeX) for those beautiful equations 😍.
+I built this website by creating a custom Hugo template. The template also uses Bootstrap 5 for a lot of the layout, components and icons (I have come to find that I am bad at CSS). The bootstrap theming is customised through sass (which I learned through [this tutorial](https://www.youtube.com/watch?v=iJKCj8uAHz8) allowing me to add [custom buttons](https://themightyprogrammer.dev/snippet/custom-bootstrap-button). The website also has LaTeX support (through KaTeX) for those beautiful equations 😍.
 
 The designs for the website were mocked up using Figma
 
