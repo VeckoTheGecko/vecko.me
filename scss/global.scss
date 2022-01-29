@@ -1,18 +1,12 @@
 @use "custom";
-
-:root {
-  --main-bg-color: #1f1f1f;
-  --vecko-green: #26ed83;
-  --less-emphasis-grey: #989898;
-  --summary-backing: #292929;
-}
+$vecko-green: #26ed83;
 
 .vecko-bg {
-  background: var(--vecko-green);
+  background: $vecko-green;
 }
 
 .vecko-text {
-  color: var(--vecko-green);
+  color: $vecko-green;
 }
 
 * {
@@ -31,12 +25,12 @@ a:hover {
 
 /* Header */
 .navbar {
-  border-bottom: 0.1em solid var(--vecko-green);
+  border-bottom: 0.1em solid $vecko-green;
 }
 
 #site-title,
 #site-title:hover {
-  color: var(--vecko-green);
+  color: $vecko-green;
   text-decoration: none;
   font-size: 1.6em;
   font-weight: bolder;
