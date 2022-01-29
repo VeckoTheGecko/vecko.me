@@ -32,45 +32,12 @@ a:hover {
   border-bottom: 0.1em solid var(--vecko-green);
 }
 
-.site-title,
-.site-title:hover {
+#site-title,
+#site-title:hover {
   color: var(--vecko-green);
   text-decoration: none;
   font-size: 1.6em;
   font-weight: bolder;
-}
-
-/* HEADER STUFF */
-.title {
-  /* Formatting for Nick Hodgskin */
-  font-size: 4em;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0.1em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  margin-top: 0.5em;
-  font-size: 1.3em;
-}
-
-h1 {
-  font-size: 2.25em;
-}
-
-h2 {
-  font-size: 1.5em;
-  /* margin-bottom: 0.5em; */
-}
-
-h3 {
-  font-size: 1.5em;
 }
 
 #title {
