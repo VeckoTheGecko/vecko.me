@@ -1,9 +1,5 @@
-{{ define "custom-head" }}
-    <link rel="stylesheet" href='{{"css/posts.css" | absURL}}'>
-{{ end }}
-
 {{ define "main" }}
-    <div id="title">Posts in {{ partial "badges/tag.html" .Title }}</div>
+    <div id="title" class="text-center">Posts in {{ partial "badges/tag.html" .Title }}</div>
     {{ .Content }}
     <div class="posts-page-container">
         <div id="post-previews">
