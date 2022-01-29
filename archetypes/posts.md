@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 author: Nick Hodgskin
-draft: false
+draft: true
 maths: false # Bool. Katex support
 
 # Organisation
