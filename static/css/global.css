@@ -139,23 +139,19 @@ h3 {
   margin-right: 1em;
 }
 
+/* TAGS */
 .tag,
 .series {
   font-family: Consolas;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
   text-decoration: none;
+  border-radius: 0.2em;
 }
+
 .tag:hover,
 .series:hover {
   text-decoration: underline;
 }
 
-.tag {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 0.2em;
-}
 .skew {
   display: inline-flex;
   transform: skewX(-15deg);
@@ -163,50 +159,6 @@ h3 {
 
 .unskew {
   transform: skewX(15deg);
-}
-
-.series {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  border-radius: 0.2em;
-}
-
-/* Post preview buttons */
-.post-preview-buttons {
-  display: inline;
-  float: right;
-}
-.post-preview-buttons > * {
-  padding: 0 0.1em 0 0.1em;
-}
-/* Hover effects */
-.post-preview-buttons .fa.button:hover {
-  filter: grayscale(0);
-}
-
-.post-preview-buttons .fa.button {
-  font-size: 3em;
-  text-decoration: none;
-  border-radius: 0.1em;
-  transition: 0.1s ease-in-out;
-}
-
-/* GitHub and YouTube post preview buttons*/
-.post-preview-buttons .fa-github-square.button,
-.fa-youtube-square.button {
-  text-align: center;
-  color: var(--less-emphasis-grey);
-  background: var(--summary-backing);
-}
-
-.post-preview-buttons .fa-github-square.button:hover {
-  color: #800080;
-}
-
-.post-preview-buttons .fa-youtube-square.button:hover {
-  color: #ff0000;
 }
 
 .github-purple {
