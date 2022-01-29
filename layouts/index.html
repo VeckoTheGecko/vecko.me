@@ -3,14 +3,14 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="welcome-container">
-    <h1 id="welcome">Welcome to the home of</h1>
-    <img id="vecko-image" src='{{"images/vecko-written.svg" | absURL}}' alt="An image of the word Vecko handwritten">
-    <p id="tagline">a site of maths, data science, and computational exploration</p>
+<div class="container-fluid text-center">
+    <h1>Welcome to the home of</h1>
+    <img class="img-fluid py-5 w-50" src='{{"images/vecko-written.svg" | absURL}}' alt="An image of the word Vecko handwritten">
+    <p class="text-center">a site of maths, data science, and computational exploration</p>
 </div>
 
-<div class="hot-off-the-press">
-    <h2 id="hot-off-the-press">Hot off the press</h2>
+<div class="container-lg py-5">
+    <h2>Hot off the press</h2>
     <!-- Finding posts by reverse date -->
     {{ $press_empty := true }}
     {{ range (and (where .Site.RegularPages "Type" "posts")).ByDate.Reverse }}
@@ -21,14 +21,15 @@
         {{end}}
     {{ end }}
     {{ if $press_empty }}
-        <div class="no-fresh" style="margin:2em; width: 45em; color: #989898; text-align: center;">
+        <div class="text-center text-muted m-5">
             Nothing fresh off the press, check back later 😁
         </div>
     {{ end }}
-
-    <a class="more-posts-button" href='{{ "posts" | absURL }}'>
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>  More posts
+    <div>
+    <a class="btn btn-primary text-dark vecko-bg ms-auto" href='{{ "posts" | absURL }}'>
+        More posts <i class="bi bi-arrow-right"></i>
     </a>
+    </div>
 
 
 </div>

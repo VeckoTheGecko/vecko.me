@@ -4,39 +4,42 @@
 
 {{ define "main" }}
 <article>
-    <h1 id="main-title">
+    <h1 id="title">
         {{ .Title }}
     </h1>
     {{ if .Params.series }}
         <div>
-            Series: {{ partial "badges/series.html" .Params.series }}
+            {{ partial "badges/series.html" .Params.series }}
         </div>
     {{ end }}
     
     {{ if .Params.tags }}
-    <div class="tag-container">
+    <div id="tag-container" class="py-2">
         {{ range .Params.tags }}
         {{ partial "badges/tag.html" . }}
         {{ end }}
     </div>
     {{ end }}
-    <div id="posted-date">
-        <i class="fa fa-calendar" aria-hidden="true" style="padding-right: 0.5em;"></i>Posted {{ time.Format "2 January 2006 @ 3:04pm" .Date }}
-    </div>
-    <div id="reading-time">
-        <i class="fa fa-coffee" aria-hidden="true" style="padding-right: 0.4em;"></i>{{printf "%d min" .ReadingTime}}
+    <div id="post-data" class="text-muted">
+        <div>
+            <i class="bi bi-calendar-date-fill pe-2"></i> Posted {{ time.Format "2 January 2006 @ 3:04pm" .Date }}
+        </div>
+        <div>
+            <i class="bi bi-hourglass-split pe-2"></i> {{printf "%d min" .ReadingTime}}
+        </div>
     </div>
 
 
     {{ if or .Params.youtube .Params.github}}
-        <div class="buttons-container">
-            {{ if .Params.youtube}}
-            {{ partial "buttons/youtube.html" .Params.youtube }}
-            {{end}}
+        <div class="container px-0 my-2">
+            <!-- External links -->
+            {{ if .Params.youtube }}
+            <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="btn btn-outline-danger my-1"><i class="bi bi-youtube"></i> YouTube</a>
+            {{ end }}
             
-            {{ if .Params.github}}
-            {{ partial "buttons/github.html" .Params.github }}
-            {{end}}
+            {{ if .Params.github }}
+            <a title="Go to GitHub repo" href="{{ .Params.github }}" class="btn btn-outline-light my-1"><i class="bi bi-github"></i> GitHub Repo</a>
+            {{ end }}
         </div>
     {{ end }}
     
@@ -44,4 +47,7 @@
         {{ .Content }}
     </section>
 </article>
+
+<script src='{{"js/progress-bar.js" | absURL}}'></script>
+
 {{end}}

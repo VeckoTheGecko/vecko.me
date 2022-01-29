@@ -11,4 +11,5 @@
     {{ $font_colour = $tag_data.font_colour }}
 {{ end }}
 
-<a class="series" href='{{ "/series/" | relLangURL }}{{ . | urlize }}' style="background-color: {{ $fill_colour }};color: {{ $font_colour }};">{{ . }}</a>
+<a class="series p-1 pe-2 mb-1" href='{{ "/series/" | relLangURL }}{{ . | urlize }}' style="background-color: {{ $fill_colour }};color: {{ $font_colour }}; font-family: Consolas;">
+    <i class="bi bi-arrow-repeat pe-1"></i>{{ . }}</a>

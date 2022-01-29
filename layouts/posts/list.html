@@ -1,34 +1,40 @@
-{{ define "custom-head" }}
-    <link rel="stylesheet" href='{{"css/posts.css" | absURL}}'>
-{{ end }}
-
 {{ define "main" }}
-    <h1 id="title">Posts</h1>
+    <h1 id="title" class="my-1 mx-4">Posts</h1>
     {{ .Content }}
-    <div class="posts-page-container">
-        <div class="nav-by-tag">
-            <div class="browse-by-container">
-                <!-- List of tags + counts -->
-                <p class="browse-by">Browse by tag</p>
-                {{ range (sort .Site.Taxonomies.tags "Count" "desc") }}
-                    <div class="badge-count">
-                        {{ partial "badges/tag.html" .Page.Title }} (x{{ .Count }})
-                    </div>
-                {{end}}
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mx-4 mb-4" data-bs-toggle="modal" data-bs-target="#filter-tags">
+        <i class="bi bi-funnel-fill"></i> Filter posts
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="filter-tags" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filter posts</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <hr>
-            <div class="browse-by-container">
-                <!-- List of series + counts -->
-                <p class="browse-by">Browse by series</p>
-                {{ range (sort .Site.Taxonomies.series "Count" "desc") }}
-                    <div class="badge-count">
-                        {{ partial "badges/series.html" .Page.Title }} (x{{ .Count }})</a>
-                    </div>
+            <div class="modal-body">
+            <h5>Browse by tag</h5>
+            {{ range (sort .Site.Taxonomies.tags "Count" "desc") }}
+                <div class="py-1">
+                    {{ partial "badges/tag.html" .Page.Title }} (x{{ .Count }})
+                </div>
+            {{end}}
+            
+            <h5 class="pt-4">Browse by series</h5>
+            {{ range (sort .Site.Taxonomies.series "Count" "desc") }}
+                <div class="py-1">
+                    {{ partial "badges/series.html" .Page.Title }} (x{{ .Count }})</a>
+                </div>
 
-                {{end}}
+            {{end}}
             </div>
         </div>
-        <div class="post-previews">
+        </div>
+    </div>
+    <div></div>
+        <div id="post-previews">
             {{ range .Pages }}
                 {{ partial "postpreview.html" . }}
             {{ end }}

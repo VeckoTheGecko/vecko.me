@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,13 @@
 
     {{end}}
 </head>
-<body>
+<body class="bg-dark text-light d-flex flex-column h-100">    
     {{ partial "header.html" . }}
-    <div class="main">
+    <!-- Progress bar (only enabled for single pages) -->
+    <div class="progress bg-transparent d-sm-none" style="height: 10px; border-radius: 0;">
+        <div id="scroll-progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="main container p-5 flex-shrink-0">
         {{ block "main" .}}
 
         {{end}}
