@@ -1,38 +1,8 @@
-<!-- <div class="post-preview" onclick="location.href={{ .Permalink }}" style="cursor: pointer">
-    <h2>{{ .Title }}</h2>
-    
-    <div class="post-preview-buttons">
-        {{ if .Params.youtube }}
-        <a title="Go to YouTube video" href="{{ .Params.youtube }}" class="fa fa-youtube-square button"></a>
-        {{ end }}
-        
-        {{ if .Params.github }}
-        <a title="Go to GitHub repo" href="{{ .Params.github }}" class="fa fa-github-square button"></a>
-        {{ end }}
-    </div>
-    <p class="post-date">{{ time.Format "Jan 2, 2006" .Date }}</p>
-    
-    <div class="tags-container">
-        {{ if .Params.series }}
-            {{ partial "badges/series.html" .Params.series }} || 
-        {{ end }}
-        
-        {{ if .Params.tags }}
-            {{ range .Params.tags }}
-                {{ partial "badges/tag.html" . }}
-            {{ end }}
-        {{ end }}
-    </div>
-    
-    
-    <p class="post-summary">{{ .Summary | plainify}}</p>
-</div> -->
-
 <div class="card bg-dark p-2" onclick="location.href={{ .Permalink }}" style="cursor: pointer;">
     <!-- <img src="" class="card-img-top" alt="..."> -->
     <div class="card-body">
         <div class="d-flex">
-            <h5 class="card-title my-1 me-2">{{ .Title }}</h5>
+            <h5 class="card-title my-1 me-2 text-vecko">{{ .Title }}</h5>
             <div class="ms-auto d-none d-lg-block">
                 <!-- External links -->
                 {{ if .Params.youtube }}
