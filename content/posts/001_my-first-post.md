@@ -15,7 +15,7 @@ github: https://github.com/VeckoTheGecko/vecko.me # Optional: URL for specific G
 youtube: # Optional: URL for specific YouTube video from the channel
 
 summary: # Optional
-# slug: welcome to vecko.me
+slug: welcome to vecko.me
 ---
 
 Ever since I started coding a few years ago, I have always loved doing personal projects to explore what is possible with computers, and to just straight up have fun. As I developed my coding skills, what started off as small games with bucket-loads of "if" statements turned into more mature, fully fledged projects.
