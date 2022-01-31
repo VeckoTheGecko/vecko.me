@@ -1,11 +1,12 @@
-baseURL: 'https://www.vecko.me'
-languageCode: 'en-us'
+baseURL: "https://www.vecko.me"
+languageCode: "en-us"
 author:
   name: Nick Hodgskin
 title: Vecko
 
 taxonomies:
   tag: tags
+  category: categories
   series: series
 
 menu:
@@ -18,7 +19,6 @@ menu:
       name: "Posts"
       url: "/posts/"
       weight: 2
-
 
 markup:
   highlight:

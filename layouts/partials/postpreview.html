@@ -25,12 +25,19 @@
             </small>
         </p>
       <div class="tags-container pb-1">
-          <!-- Series -->
-        {{ if .Params.series }}
+        <!-- Series and category-->        
+        {{ if or .Params.series .Params.categories}}
         <span class="me-3">
-            {{ partial "badges/series.html" .Params.series }}
+        {{ if .Params.series }}
+        {{ partial "badges/series.html" .Params.series }}
+        {{ end }}
+
+        {{ if .Params.categories }}
+        {{ partial "badges/category.html" .Params.categories }}
+        {{ end }}
         </span>
         {{ end }}
+
         
         {{ if .Params.tags }}
             {{ range .Params.tags }}

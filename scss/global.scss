@@ -46,14 +46,16 @@ a:hover {
 
 /* TAGS */
 .tag,
-.series {
+.series,
+.category {
   font-family: Consolas;
   text-decoration: none;
   border-radius: 0.2em;
 }
 
 .tag:hover,
-.series:hover {
+.series:hover,
+.category:hover {
   text-decoration: underline;
 }
 

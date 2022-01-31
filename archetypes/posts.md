@@ -7,6 +7,7 @@ maths: false # Bool. Katex support
 
 # Organisation
 tags: [] # Relevant tags
+categories: # Category (only 1 category allowed)
 series: # Optional
 thumbnail: # URL to post thumbnail
 
