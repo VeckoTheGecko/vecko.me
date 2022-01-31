@@ -7,7 +7,7 @@ maths: false # Bool. Katex support
 
 # Organisation
 tags: [My First Post, Hugo, Saas, Bootstrap v5] # Relevant tags
-categories: Project # Category (only 1 category allowed)
+categories: Projects # Category (only 1 category allowed)
 series: # Optional
 thumbnail: # URL to post thumbnail
 
