@@ -16,4 +16,5 @@ github: # Optional: URL for specific GitHub repo
 youtube: # Optional: URL for specific YouTube video from the channel
 
 summary: # Optional
+slug: 
 ---
