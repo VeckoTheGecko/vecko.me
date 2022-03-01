@@ -3,8 +3,7 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>A new website, a new beginning. Welcome to vecko.me! | Vecko</title>
-<link rel="shortcut icon" type=image/png href=images/vecko_icon.png>
+<title>A new website, a new beginning. Welcome to vecko.me! | Vecko</title><link rel="shortcut icon" type=image/png href=images/vecko_icon.png>
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
@@ -12,8 +11,7 @@
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css>
 <link rel=stylesheet href=https://www.vecko.me/css/global.css>
 <link rel=stylesheet href=https://www.vecko.me/css/post-single.css>
-</head>
-<body class="bg-dark text-light d-flex flex-column h-100">
+</head><body class="bg-dark text-light d-flex flex-column h-100">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 <div class=container>
 <a href=https://www.vecko.me id=site-title class="p-2 pe-4">Vecko</a>
@@ -24,27 +22,17 @@
 <ul class=navbar-nav>
 <li class=nav-item>
 <a href=/ class=nav-link>Home</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a href=/posts/ class=nav-link>Posts</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class="progress bg-transparent d-sm-none" style=height:10px;border-radius:0>
-<div id=scroll-progress-bar class=progress-bar role=progressbar style=width:0% aria-valuenow=25 aria-valuemin=0 aria-valuemax=100></div>
-</div>
-<div class="main container p-5 flex-shrink-0">
+</li></ul></div></div></nav><div class="progress bg-transparent d-sm-none" style=height:10px;border-radius:0>
+<div id=scroll-progress-bar class=progress-bar role=progressbar style=width:0% aria-valuenow=25 aria-valuemin=0 aria-valuemax=100></div></div><div class="main container p-5 flex-shrink-0">
 <article>
 <h1 id=title class=text-vecko>
 A new website, a new beginning. Welcome to vecko.me!
-</h1>
-<div class=me-3>
+</h1><div class=me-3>
 <a class="category p-1 pe-2 mb-1" href=/categories/projects style=background-color:#26d3ed;color:#000;font-family:Consolas>
 <i class="bi bi-folder-fill pe-1"></i>Projects</a>
-</div>
-<div id=tag-container class=py-2>
+</div><div id=tag-container class=py-2>
 <a class="tag skew px-2 mb-1" href=/tags/my-first-post style=background-color:#fff;color:#000>
 <span class=unskew>My First Post</span>
 </a>
@@ -57,74 +45,27 @@ A new website, a new beginning. Welcome to vecko.me!
 <a class="tag skew px-2 mb-1" href=/tags/bootstrap-v5 style=background-color:grey;color:#000>
 <span class=unskew>Bootstrap v5</span>
 </a>
-</div>
-<div id=post-data class=text-muted>
+</div><div id=post-data class=text-muted>
 <div>
 <i class="bi bi-calendar-date-fill pe-2"></i> Posted 30 January 2022
-</div>
-<div>
+</div><div>
 <i class="bi bi-hourglass-split pe-2"></i> 8 min
-</div>
-</div>
-<div class="container px-0 my-2">
+</div></div><div class="container px-0 my-2">
 <a title="Go to GitHub repo" href=https://github.com/VeckoTheGecko/vecko.me class="btn btn-github my-1"><i class="bi bi-github"></i> GitHub Repo</a>
-</div>
-<section class=article-body>
-<p>Ever since I started coding a few years ago, I have always loved doing personal projects to explore what is possible with computers, and to just straight up have fun. As I developed my coding skills, what started off as small games with bucket-loads of &ldquo;if&rdquo; statements turned into more mature, fully fledged projects.</p>
-<p>As I was doing this, I came to encounter two problems:</p>
-<ul>
-<li>there wasn&rsquo;t an easy way for me to share my projects with others</li>
-<li>I don&rsquo;t do nearly enough projects as I would like to</li>
-</ul>
-<p>So I present to you my website, the silver bullet for both of these problems! An easy way to share what I get up to and to discuss it with others, as well as a way for me to keep me motivated and accountable with projects (as my projects aren&rsquo;t just for my own entertainment any more).</p>
-<p>Of course, the act of constructing this website has been a project in itself. In fact, it has been one of my biggest projects so far. Through doing this project, I have learned a lot about web development. In the following sections, I will go through my process of developing the website, as well as going over the choices I made. I won&rsquo;t be delving into the the code, but if that is your fancy, the whole project is <a href=https://github.com/VeckoTheGecko/vecko.me>visible on GitHub</a> for you to check out.</p>
-<h1 id=the-implementation>The implementation</h1>
-<h2 id=static-or-dynamic>Static or dynamic</h2>
-<p>When designing a website, you need to first decide what type of website you are wanting to build. One of these decisions is whether you want your site to be static or dynamic.</p>
-<p>A <strong>dynamic</strong> site is a site like Facebook, or Twitter. These websites are constantly changing as new people add content to the website, and everyone&rsquo;s experience on the website is different. Once I log into my account, my feed is tailored based on who I follow. For a dynamic site to function, there needs to be a server either serving me the tailored webpages (<a href=https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/>&ldquo;server side rendering&rdquo;</a>) or serving me the relevant data so that my browser can assemble the webpages itself (<a href=https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/>&ldquo;client side rendering&rdquo;</a>). Due to the servers and databases associated with dynamic websites, there is a cost associated with them that scales with the more users your website has.</p>
-<p>A <strong>static</strong> site on the other hand doesn&rsquo;t offer a unique experience to its users. Every user gets served the same static webpages, and hence everyone gets the same experience.
+</div><section class=article-body>
+<p>Ever since I started coding a few years ago, I have always loved doing personal projects to explore what is possible with computers, and to just straight up have fun. As I developed my coding skills, what started off as small games with bucket-loads of &ldquo;if&rdquo; statements turned into more mature, fully fledged projects.</p><p>As I was doing this, I came to encounter two problems:</p><ul>
+<li>there wasn&rsquo;t an easy way for me to share my projects with others</li><li>I don&rsquo;t do nearly enough projects as I would like to</li></ul><p>So I present to you my website, the silver bullet for both of these problems! An easy way to share what I get up to and to discuss it with others, as well as a way for me to keep me motivated and accountable with projects (as my projects aren&rsquo;t just for my own entertainment any more).</p><p>Of course, the act of constructing this website has been a project in itself. In fact, it has been one of my biggest projects so far. Through doing this project, I have learned a lot about web development. In the following sections, I will go through my process of developing the website, as well as going over the choices I made. I won&rsquo;t be delving into the the code, but if that is your fancy, the whole project is <a href=https://github.com/VeckoTheGecko/vecko.me>visible on GitHub</a> for you to check out.</p><h1 id=the-implementation>The implementation</h1><h2 id=static-or-dynamic>Static or dynamic</h2><p>When designing a website, you need to first decide what type of website you are wanting to build. One of these decisions is whether you want your site to be static or dynamic.</p><p>A <strong>dynamic</strong> site is a site like Facebook, or Twitter. These websites are constantly changing as new people add content to the website, and everyone&rsquo;s experience on the website is different. Once I log into my account, my feed is tailored based on who I follow. For a dynamic site to function, there needs to be a server either serving me the tailored webpages (<a href=https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/>&ldquo;server side rendering&rdquo;</a>) or serving me the relevant data so that my browser can assemble the webpages itself (<a href=https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/>&ldquo;client side rendering&rdquo;</a>). Due to the servers and databases associated with dynamic websites, there is a cost associated with them that scales with the more users your website has.</p><p>A <strong>static</strong> site on the other hand doesn&rsquo;t offer a unique experience to its users. Every user gets served the same static webpages, and hence everyone gets the same experience.
 Static websites can really just be written in plain HTML, CSS and JavaScript which is then displayed in the browser (this is how things were done in the early days of the internet), but this approach just isn&rsquo;t scalable. Ideally you would want to use an SSG (Static Site Generator) like <a href=https://gohugo.io/>Hugo</a>, <a href=https://jekyllrb.com/>Jekyll</a>, or <a href=https://www.gatsbyjs.com/>Gatsby</a> which takes data, and structured text (like markdown documents) and use that to generate the individual pages for the website. This allows you to easily edit your data and files without having to dig through raw HTML. Every time you change the underlying data you would need to recompile the website.
-As you only need a place to store the files, and a script to occasionally compile the site, the cost for a static website is minimal (on the order for $0.50 a month, or even for free if you use GitHub Pages).</p>
-<p>From those descriptions, you&rsquo;ll probably agree with me that for a blog type website, a static website using a static site generator is ideal! I chose to use Hugo as an SSG for its speed, and its ease of setup.</p>
-<h2 id=working-in-hugo>Working in Hugo</h2>
-<p>The beauty of working with an SSG is that since the content which is used to make the website, and the logic required to generate the website is separate, making it really easy to get up and running with a slick new website. By using a theme (which provides the website building logic to the SSG), you are able to set up a website quickly in less than 30 minutes. And the beauty is that there are a lot of freely available themes for different types of sites, allowing you to choose the theme that best suits your needs.
-With everything going to plan, you can go from not having a website, to having a website that is accessible to the world for free in less than an hour.</p>
-<p>However, I didn&rsquo;t take this quick approach. I couldn&rsquo;t find a theme for Hugo that I really liked, and I also wanted to have full control over how my website was built. So I decided to embark on the journey of creating my own custom theme.</p>
-<p>When starting to learn how to develop in Hugo, I found this YouTube <a href="https://youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">playlist by Mike Dane</a> that provides a really good insight into Hugo. This was a good gateway into how to work with Hugo, but I found that the best thing was really to look at the source code of existing themes. By setting up a theme, and then looking through the source code and investigating how it works, you&rsquo;re able to learn a lot more that what can be covered in a YouTube playlist. You can draw inspiration from problems that the theme creators encountered, and how they went about solving it. By looking at the source code, you can pick and choose features that you think would be good for your site or (equally importantly) know which features you don&rsquo;t want to use.</p>
-<h2 id=making-it-beautiful>Making it beautiful</h2>
-<p>Hugo takes care of how the content gets assembled into the structure of the website (what goes on what page). Whats left is making the website look good (the colours, the fonts, the visual layout etc.). This is where CSS comes in. Something that I have learned from previous projects is that doing the styling of the website, it is much easier to mock it up first in design software before you dive into the code. Foregoing this intermediate step can lead you to spending 40 minutes centring an item just to realise it looks trash (&mldr;not talking from experience, I&rsquo;m much better than that of course).</p>
-<p>Figma came to the rescue again this time, and is a really good application for doing these mock ups. By sorting out the fonts, the visual layout, and the colour scheme beforehand, you are able to start the CSS with a clear goal in mind.</p>
-<p>And that&rsquo;s what I did, I wrote the CSS to replicate my Figma design and all was good&mldr;or so I thought. One concept that that I completely neglected was responsiveness. Your design should be able to adapt so that it looks good on all devices. If this isn&rsquo;t done correctly, it can make a website unusable on mobile. That was my website, it was great on desktop, but terrible on mobile (items misaligned, and items flowing off the right side of the screen).</p>
-<p>Making responsive designs just using CSS is quite challenging. At this point I remembered <a href=https://getbootstrap.com/>Bootstrap</a> which is a CSS toolkit that comes pre-built with a lot of commonly used styles and components. The best part is that the styles and components can adapt based on what screen size you use. For me, this allowed me to size my elements correctly, cut down a lot of the unnecessary CSS code I had, as well as have the layout change as the screen size got smaller. Due to the sheer popularity of Bootstrap, I was also able to find examples of what I wanted, and then adapt them to my needs.</p>
-<p>Finally, the finishing touch that I needed was a small amount of customisation of Bootstrap. Bootstrap is built using Sass, a compiler that allows you to programmatically generate CSS to include in your website. By including some custom Sass files, I was able to extend the functionality of Bootstrap by tweaking Bootstrap&rsquo;s colours and by adding a couple more buttons.</p>
-<h2 id=deployment>Deployment</h2>
-<p>All of the files for the website are stored on GitHub in a repository. I have set up GitHub actions so that if I make changes to the source files in the <code>main</code> branch, they are taken and compiled into the public website files which are then stored in the separate branch <code>gh-pages</code>. This branch is then served to the world using GitHub pages.</p>
-<p>And that&rsquo;s it! My whole website in a nutshell.</p>
-<h1 id=where-from-here>Where from here</h1>
-<p>There is still room to improve the website. Besides the small changes that I will be making along the way, there are some features that I would like to add to the website. As of writing this, these are some of the features that are lacking and that I would like to include:</p>
-<ul>
+As you only need a place to store the files, and a script to occasionally compile the site, the cost for a static website is minimal (on the order for $0.50 a month, or even for free if you use GitHub Pages).</p><p>From those descriptions, you&rsquo;ll probably agree with me that for a blog type website, a static website using a static site generator is ideal! I chose to use Hugo as an SSG for its speed, and its ease of setup.</p><h2 id=working-in-hugo>Working in Hugo</h2><p>The beauty of working with an SSG is that since the content which is used to make the website, and the logic required to generate the website is separate, making it really easy to get up and running with a slick new website. By using a theme (which provides the website building logic to the SSG), you are able to set up a website quickly in less than 30 minutes. And the beauty is that there are a lot of freely available themes for different types of sites, allowing you to choose the theme that best suits your needs.
+With everything going to plan, you can go from not having a website, to having a website that is accessible to the world for free in less than an hour.</p><p>However, I didn&rsquo;t take this quick approach. I couldn&rsquo;t find a theme for Hugo that I really liked, and I also wanted to have full control over how my website was built. So I decided to embark on the journey of creating my own custom theme.</p><p>When starting to learn how to develop in Hugo, I found this YouTube <a href="https://youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">playlist by Mike Dane</a> that provides a really good insight into Hugo. This was a good gateway into how to work with Hugo, but I found that the best thing was really to look at the source code of existing themes. By setting up a theme, and then looking through the source code and investigating how it works, you&rsquo;re able to learn a lot more that what can be covered in a YouTube playlist. You can draw inspiration from problems that the theme creators encountered, and how they went about solving it. By looking at the source code, you can pick and choose features that you think would be good for your site or (equally importantly) know which features you don&rsquo;t want to use.</p><h2 id=making-it-beautiful>Making it beautiful</h2><p>Hugo takes care of how the content gets assembled into the structure of the website (what goes on what page). Whats left is making the website look good (the colours, the fonts, the visual layout etc.). This is where CSS comes in. Something that I have learned from previous projects is that doing the styling of the website, it is much easier to mock it up first in design software before you dive into the code. Foregoing this intermediate step can lead you to spending 40 minutes centring an item just to realise it looks trash (&mldr;not talking from experience, I&rsquo;m much better than that of course).</p><p>Figma came to the rescue again this time, and is a really good application for doing these mock ups. By sorting out the fonts, the visual layout, and the colour scheme beforehand, you are able to start the CSS with a clear goal in mind.</p><p>And that&rsquo;s what I did, I wrote the CSS to replicate my Figma design and all was good&mldr;or so I thought. One concept that that I completely neglected was responsiveness. Your design should be able to adapt so that it looks good on all devices. If this isn&rsquo;t done correctly, it can make a website unusable on mobile. That was my website, it was great on desktop, but terrible on mobile (items misaligned, and items flowing off the right side of the screen).</p><p>Making responsive designs just using CSS is quite challenging. At this point I remembered <a href=https://getbootstrap.com/>Bootstrap</a> which is a CSS toolkit that comes pre-built with a lot of commonly used styles and components. The best part is that the styles and components can adapt based on what screen size you use. For me, this allowed me to size my elements correctly, cut down a lot of the unnecessary CSS code I had, as well as have the layout change as the screen size got smaller. Due to the sheer popularity of Bootstrap, I was also able to find examples of what I wanted, and then adapt them to my needs.</p><p>Finally, the finishing touch that I needed was a small amount of customisation of Bootstrap. Bootstrap is built using Sass, a compiler that allows you to programmatically generate CSS to include in your website. By including some custom Sass files, I was able to extend the functionality of Bootstrap by tweaking Bootstrap&rsquo;s colours and by adding a couple more buttons.</p><h2 id=deployment>Deployment</h2><p>All of the files for the website are stored on GitHub in a repository. I have set up GitHub actions so that if I make changes to the source files in the <code>main</code> branch, they are taken and compiled into the public website files which are then stored in the separate branch <code>gh-pages</code>. This branch is then served to the world using GitHub pages.</p><p>And that&rsquo;s it! My whole website in a nutshell.</p><h1 id=where-from-here>Where from here</h1><p>There is still room to improve the website. Besides the small changes that I will be making along the way, there are some features that I would like to add to the website. As of writing this, these are some of the features that are lacking and that I would like to include:</p><ul>
 <li>Search engine optimisation
 <ul>
-<li>Google doesn&rsquo;t know I exist. Even though the website is readable for humans, its not that easy for a bot to crawl it.</li>
-</ul>
-</li>
-<li>Comment support
+<li>Google doesn&rsquo;t know I exist. Even though the website is readable for humans, its not that easy for a bot to crawl it.</li></ul></li><li>Comment support
 <ul>
-<li>With static websites, one would think that one wouldn&rsquo;t be able to comment on posts. However, there are creative ways of accomplishing it (eg. <a href=https://utteranc.es/>Utteranc.es</a> or Disqus).</li>
-</ul>
-</li>
-<li>Search support
+<li>With static websites, one would think that one wouldn&rsquo;t be able to comment on posts. However, there are creative ways of accomplishing it (eg. <a href=https://utteranc.es/>Utteranc.es</a> or Disqus).</li></ul></li><li>Search support
 <ul>
-<li>When I have written some more posts, I would like to have posts be searchable from within the website.</li>
-</ul>
-</li>
-</ul>
-<p>For the moment though, I feel that I have spent enough energy developing the website, and its time that I get to writing interesting posts to go along with it. This will be my primary goal over the next months.</p>
-</section>
-</article>
-<script src=https://www.vecko.me/js/progress-bar.js></script>
-</div>
-<footer class="footer text-center mt-auto py-3">
+<li>When I have written some more posts, I would like to have posts be searchable from within the website.</li></ul></li></ul><p>For the moment though, I feel that I have spent enough energy developing the website, and its time that I get to writing interesting posts to go along with it. This will be my primary goal over the next months.</p></section></article><script src=https://www.vecko.me/js/progress-bar.js></script>
+</div><footer class="footer text-center mt-auto py-3">
 <div class="container text-muted">
 <span>&copy; Nick Hodgskin 2022 <a href=https://www.vecko.me>Vecko</a>.</span>
 <span>
@@ -132,7 +73,4 @@ Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a>
 with my custom theme
 </span>
-</div>
-</footer>
-</body>
-</html>
+</div></footer></body></html>
