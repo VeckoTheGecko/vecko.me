@@ -5,7 +5,7 @@ on:
     branches:
       - main # Set a branch to deploy
   schedule:
-    - cron: "1 0 * * *" # Daily website build
+    - cron: "0 0 * * 0" # Weekly website build (weekly on a Sunday)
 
 jobs:
   deploy:
@@ -15,10 +15,15 @@ jobs:
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
+      
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
+      
+      - name: Setting commit author to GitHub actions bot
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Installing npm env
         run: npm install
