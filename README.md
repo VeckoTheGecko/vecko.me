@@ -9,4 +9,3 @@ Welcome to my portfolio website!! It pretty much speaks for itself.
 ## Technical details
 
 Implemented using Sveltkit with Tailwind CSS.
-
