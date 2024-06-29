@@ -1,5 +1,5 @@
 <script>
-	import "../output.css"
+	import "../app.css"
 </script>
 
 <div class="app flex flex-col min-h-screen">
