@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="flex justify-center">
-  <div class="justify-center flex flex-col items-center gap-4 w-2/5 py-4">
+  <div class="justify-center flex flex-col items-center text-center gap-4 w-2/5 py-4">
     <div class="text-4xl font-medium">Welcome to the home of</div>
     <div class="max-w-2/5 h-auto">
       <VeckoWritten />
