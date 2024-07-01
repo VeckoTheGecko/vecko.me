@@ -11,7 +11,7 @@
 		</nav>
 	</header>
 	<div class="w-full h-0.5 bg-vecko"></div>
-	<main class="flex-grow">
+	<main class="flex-grow p-16">
 		<slot />
 	</main>
 
