@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+  - toc
+  - footer
+---
+
 <style>
     .md-typeset h1 {
         display: none;
@@ -7,8 +14,13 @@
 
 <!-- Embed svg at assets/written.svg-->
 <div style="text-align: center;">
-    <img src="assets/vecko-written.svg" alt="Vecko" />
+    <img src="assets/vecko-written.svg" alt="Vecko"/>
     <div>
-        dot me. A personal portfolio, and brain dump.
+        dot me. A blog and a personal portfolio.
     </div>
+    <div style="padding-bottom: 1em;"></div>
+
+    <a href="./blog" class="md-button">Blog</a>
+    <a href="./me" class="md-button">Portfolio</a>
+
 </div>
