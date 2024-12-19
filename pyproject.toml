@@ -1,0 +1,32 @@
+[project]
+name = "vecko-me"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.5.49",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "D",  # pydocstyle
+    "E",  # Error
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # Bugbear
+    "UP", # pyupgrade
+    "LOG", # logging
+    "ICN", # import conventions
+    "G", # logging-format
+    "RUF", # ruff
+    "ISC001", # single-line-implicit-string-concatenation
+]
+
+ignore = [
+    # line too long (82 > 79 characters)
+    "E501",
+]

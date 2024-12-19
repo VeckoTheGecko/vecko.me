@@ -1,0 +1,28 @@
+site_name: Vecko.me
+site_url: https://vecko.me
+theme:
+  name: material
+  logo: assets/vecko_icon.png
+  font:
+    text: Poppins
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+  # Custom color pallete
+  palette:
+    scheme: slate
+    primary: custom
+  # Additional customisation
+  icon:
+    menu: material/hamburger
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/VeckoTheGecko
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nick-hodgskin/
