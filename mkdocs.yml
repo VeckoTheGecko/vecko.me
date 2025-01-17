@@ -1,0 +1,47 @@
+site_name: Vecko.me
+site_url: https://vecko.me
+site_description: "The personal portfolio and blog of Nick Hodgskin (aka, VeckoTheGecko)."
+theme:
+  name: material
+  logo: assets/vecko_icon.png
+  favicon: assets/vecko_icon.png
+  custom_dir: overrides
+  font:
+    text: Poppins
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+  # Custom color pallete
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  # Additional customisation
+  icon:
+    menu: material/hamburger
+
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - index.md
+  - blog/index.md
+  - about.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/VeckoTheGecko
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nick-hodgskin/
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+plugins:
+  - blog
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
