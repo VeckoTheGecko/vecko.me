@@ -1,8 +1,10 @@
 site_name: Vecko.me
 site_url: https://vecko.me
+site_description: "The personal portfolio and blog of Nick Hodgskin (aka, VeckoTheGecko)."
 theme:
   name: material
   logo: assets/vecko_icon.png
+  favicon: assets/vecko_icon.png
   custom_dir: overrides
   font:
     text: Poppins
@@ -34,3 +36,6 @@ extra:
 
 markdown_extensions:
   - attr_list
+
+plugins:
+  - blog
