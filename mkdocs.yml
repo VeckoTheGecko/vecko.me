@@ -3,6 +3,7 @@ site_url: https://vecko.me
 theme:
   name: material
   logo: assets/vecko_icon.png
+  custom_dir: overrides
   font:
     text: Poppins
   features:
