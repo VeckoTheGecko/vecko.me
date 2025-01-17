@@ -7,8 +7,9 @@ slug: welcome-to-vecko.me
 
 # A new website, a new beginning. Welcome to vecko.me!
 
-!!! note
-Update: This post is now out of date. I have since moved to a version using mkdocs. Surprise surprise - takes time to maintain something bespoke 🙂.
+!!! note "Update"
+
+    This post is now out of date. I have since moved to a version using mkdocs. Surprise surprise - takes time to maintain something bespoke 🙂.
 
 Ever since I started coding a few years ago, I have always loved doing personal projects to explore what is possible with computers, and to just straight up have fun. As I developed my coding skills, what started off as small games with bucket-loads of "if" statements turned into more mature, fully fledged projects.
 
